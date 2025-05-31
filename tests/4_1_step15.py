@@ -13,9 +13,17 @@
 """
 
 digits = list(map(int, input().split()))
+
+i = 0
+while len(digits[i:]) > 0:
+    if digits[i] == 4 or digits[i] == 7:
+        del digits[i]
+        i -= 1
+    i += 1
+
 five = digits.count(5)
 if five <= 10:
-    while five <= 10:
+    while five < 10:
         digits.append(5)
         five = digits.count(5)
 
