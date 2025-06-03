@@ -30,7 +30,3 @@ while len(clients) > 0:
     del clients[-1]
     if clients:
         print(f"{','.join(clients[::-1])} ожидайте!")
-
-
-
-
