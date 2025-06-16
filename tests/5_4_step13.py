@@ -14,6 +14,6 @@ data = [1, 2, "hello", 0, 3, 4, None, 5]
 summ = 0
 
 for i in data:
-    if type(i) == int:
+    if type(i) == int or type(i) == float:
         summ += i
 print(summ)
