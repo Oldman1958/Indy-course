@@ -28,9 +28,10 @@ substring = "доставка"
 # Код ниже можно отправлять
 flag = False
 for msg in messages:
-    if substring in msg:
+    if substring.lower() in msg.lower():
         print(msg)
         flag = True
         break
 if not flag:
     print('Подстрока не найдена')
+
