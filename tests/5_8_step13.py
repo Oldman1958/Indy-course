@@ -26,9 +26,7 @@ booked = ["Р.1, М.2", "Р.2, М.5", "Р.3, М.1", "Р.4, М.7", "Р.5, М.10"]
 hall = [['O' for _ in range(10)] for _ in range(5)]
 for elem in booked:
     row = int(elem[2]) - 1
-    # print((row))
     column = int(elem[7:]) - 1
-    # print(column)
     hall[row][column] = 'X'
 
 for i in range(5):
