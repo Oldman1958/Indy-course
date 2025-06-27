@@ -13,18 +13,22 @@
 """
 
 values = [
-    [5, 2, 8],
-    [1, 6, 3],
-    [7, 4, 9]
+
+    [10, 15, 20],
+    [25, 5, 30],
+    [40, 50, 60]
 ]
 
 res = 1000000
 
-for i in values:
-    if len(values) != 0:
+
+if len(values) != 0:
+    for i in values:
         for j in i:
             if j < res:
                 res = j
-    else:
-        print("Список пуст")
+else:
+    print("Список пуст")
+    exit()
+
 print(res)
