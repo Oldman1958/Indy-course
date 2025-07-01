@@ -14,4 +14,25 @@
 Ваша задача — вывести новый рисунок шахматной доски, добавив в него символы «+» в те места,
 куда может прийти ладья за один ход.
 """
+chess = []
+for i in range(8):
+    chess.append(list(map(str, input())))
+h = 0
+w = 0
+for i in range(8):
+    for j in range(8):
+        if chess[i][j] == 'T':
+            h = i
+            w = j
 
+for i in range(8):
+    for j in range(8):
+        if chess[i][j] == 'T':
+            continue
+        elif i == h or w == j:
+            chess[i][j] = '+'
+
+for i in range(8):
+    for j in range(8):
+        print(chess[i][j], end='')
+    print()
