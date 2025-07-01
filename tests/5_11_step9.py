@@ -16,7 +16,7 @@
 """
 chess = []
 for i in range(8):
-    chess.append(list(map(str, input())))
+    chess.append(list(input()))
 h = 0
 w = 0
 for i in range(8):
