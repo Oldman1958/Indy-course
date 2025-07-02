@@ -36,4 +36,25 @@ abs(x1 - x2) <= 1 and abs(y1 - y2) <= 1
 ps: Это всего лишь логика, и это не значит, что это поможет вам в остальном коде...
 """
 
+chess = []
+for i in range(8):
+    chess.append(list(input()))
+h = 0
+w = 0
+for i in range(8):
+    for j in range(8):
+        if chess[i][j] == 'F':
+            h = i
+            w = j
 
+for i in range(8):
+    for j in range(8):
+        if chess[i][j] == 'F':
+            continue
+        elif abs(h - i) == abs(w - j) or h == i or w == j:
+            chess[i][j] = '+'
+
+for i in range(8):
+    for j in range(8):
+        print(chess[i][j], end='')
+    print()
