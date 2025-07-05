@@ -14,9 +14,6 @@ players = [("Alice", 10), ("Bob", 15), ("Charlie", 20), ("Dave", 25)]
 max_difference = 6
 
 for i in range(len(players)):
-    for j in range(i, len(players)):
-        if i == j:
-            continue
-        else:
-            if abs(players[i][1] - players[j][1]) <= max_difference:
-                print(f"{players[i][0]} vs {players[j][0]}")
+    for j in range(i + 1, len(players)):
+        if abs(players[i][1] - players[j][1]) <= max_difference:
+            print(f"{players[i][0]} vs {players[j][0]}")
