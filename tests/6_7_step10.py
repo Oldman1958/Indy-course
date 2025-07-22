@@ -25,11 +25,15 @@ books = {
     'MNBVCXZ': 410,
     'LKH': 90
 }
-
+'''
+Классическое решение
 book_result = {}
 
 for key in books:
     if len(key) % 3 == 0:
         book_result[key] = books[key]
+'''
+# Однострочное решение
+book_result = {key: books[key]  for key in books if len(key) % 3 == 0}
 
 print(book_result)
