@@ -9,7 +9,7 @@
 
 letters = {"a": 10, "b": 20, "c": 25, "d": 15}
 
-max_val = 0
+max_val = -1000
 key_res = None
 
 for key in letters.keys():
