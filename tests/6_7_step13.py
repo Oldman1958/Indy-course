@@ -41,7 +41,4 @@ for person, (tasks, weight) in scores.items():
     elif tasks * weight == max_val:
         result.append(person)
 
-if len(result) > 1:
-    print(result)
-else:
-    print(*result)
+print(*result if len(result) == 1 else result)
