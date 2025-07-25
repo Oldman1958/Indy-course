@@ -16,4 +16,7 @@ mirror = {}
 for key, val in data.items():
     mirror.setdefault(val, [ ]).append(key)
 
+for i in mirror.values():
+    i.sort()
+
 print(mirror)
