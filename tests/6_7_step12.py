@@ -17,13 +17,12 @@ scores = {
     'Кузнецов': 25
 }
 
-
+new_scores = {}
 if len(scores) > 0:
     min_v = min(scores.values(), default=None)
 else:
+    print(new_scores)
     exit()
-
-new_scores = {}
 
 for k, v in scores.items():
     if v > min_v:
