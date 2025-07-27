@@ -22,6 +22,14 @@ scores = {
     'Геракл': (100, 1.2),
     'Игорь': (80, 1.5)
 }
+
+
+scores = {
+    'Иванов': (50, 1.5),
+    'Петров': (75, 1.2),
+    'Сидоров': (60, 1.8),
+    'Кузнецов': (90, 1.0)
+}
 '''
 scores = {
     'Иванов': (50, 1.5),
@@ -41,4 +49,4 @@ for person, (tasks, weight) in scores.items():
     elif tasks * weight == max_val:
         result.append(person)
 
-print(*result if len(result) == 1 else result)
+print(result if len(result) > 1 else result[0])
