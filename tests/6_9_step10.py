@@ -9,6 +9,6 @@
 
 nums = list(map(int, input().split(',')))
 
-result = {i: nums[i] for i in range(len(nums)) if nums[i] % 2 == 0}
+result = {i: nums[i] for i in range(len(nums)) if i % 2 == 0}
 
 print(result)
